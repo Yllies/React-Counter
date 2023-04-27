@@ -1,12 +1,15 @@
+import moins from "../img/minus.svg";
+
 const Increment = ({ setCounter, counter }) => {
   return (
-    <button
-      className={counter === 0 ? "none" : "flex"}
-      onClick={() => {
-        setCounter(counter - 1);
-      }}
-    >
-      -
+    <button>
+      <img
+        src={moins}
+        className={counter === 0 ? "none" : "flex"}
+        onClick={() => {
+          setCounter(counter - 1);
+        }}
+      />
     </button>
   );
 };
